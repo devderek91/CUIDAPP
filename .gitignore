@@ -1,0 +1,15 @@
+# Base de datos
+*.sql
+*.db
+
+# Configuración con credenciales
+config.php
+.env
+*.env
+
+# Logs
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
