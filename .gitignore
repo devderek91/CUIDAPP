@@ -1,8 +1,25 @@
-# Archivos de configuración con credenciales
+# ==========================================
+# ARCHIVOS SENSIBLES (NO SUBIR A GITHUB)
+# ==========================================
+
+# Archivos de configuración con credenciales reales
 db.php
 config/db.php
 config/config.php
 
-# Archivos del sistema
+# ==========================================
+# BASE DE DATOS
+# ==========================================
+
+# Ignorar todos los archivos SQL por defecto...
+*.sql
+
+# ...PERMITIR SOLO el archivo de estructura vacía
+!database/estructura.sql
+
+# ==========================================
+# ARCHIVOS DEL SISTEMA Y EDITOR
+# ==========================================
 .DS_Store
 Thumbs.db
+.vscode/
