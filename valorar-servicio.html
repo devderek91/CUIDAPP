@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>CUIDAPP — Valorar servicio</title>
+</head>
+<body>
+
+    <header>
+        <h1>CUIDAPP</h1>
+        <a href="dashboard-padre.html">← Volver</a>
+    </header>
+
+    <section>
+        <h2>¿Cómo fue el servicio?</h2>
+        <p>Tu valoración ayuda a otros padres a elegir con confianza.</p>
+
+        <div>
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" 
+                 alt="Foto de María" 
+                 style="width:80px; height:80px; border-radius:50%;">
+            <p>María García</p>
+            <p>Servicio del 10 de mayo de 2026 — 4 horas</p>
+        </div>
+
+        <form>
+
+            <h3>Puntuación general</h3>
+            <p>
+                <label>
+                    <input type="radio" name="puntuacion" value="5"> 
+                    ⭐⭐⭐⭐⭐ Excelente
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="puntuacion" value="4"> 
+                    ⭐⭐⭐⭐ Muy bueno
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="puntuacion" value="3"> 
+                    ⭐⭐⭐ Bueno
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="puntuacion" value="2"> 
+                    ⭐⭐ Regular
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="puntuacion" value="1"> 
+                    ⭐ Malo
+                </label>
+            </p>
+
+            <h3>¿Repetirías con María?</h3>
+            <p>
+                <label>
+                    <input type="radio" name="repetir" value="si"> 
+                    Sí, la añado a favoritos
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="repetir" value="no"> 
+                    No
+                </label>
+            </p>
+
+            <h3>Cuéntanos más</h3>
+            <p>
+                <textarea placeholder="¿Qué destacarías del servicio? Tu opinión ayuda a otros padres..." 
+                          maxlength="300"></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Enviar valoración</button>
+            </p>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>CUIDAPP © 2026 — Barcelona</p>
+    </footer>
+
+</body>
+</html>

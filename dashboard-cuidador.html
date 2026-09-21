@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>CUIDAPP — Panel cuidador</title>
+</head>
+<body>
+
+    <header>
+        <h1>CUIDAPP</h1>
+        <nav>
+            <a href="#">Mi perfil</a>
+            <a href="#">Mis reservas</a>
+            <a href="#">Cerrar sesión</a>
+        </nav>
+    </header>
+
+<section>
+    <div class="perfil-header">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" 
+             alt="Foto de perfil" 
+             class="perfil-foto">
+        <div class="perfil-info">
+            <h2>María García</h2>
+            <p>Barcelona — Gracia</p>
+            <p>⭐ 4.9 — 23 reseñas</p>
+        </div>
+    </div>
+
+    <div class="cards-row">
+        <div class="card estado-card">
+            <h3>Mi estado</h3>
+            <p id="estadoTexto" class="estado-disponible">🟢 Disponible ahora</p>
+             <button onclick="cambiarEstado()">Cambiar disponibilidad</button>
+            <a href="gestion-disponibilidad.html"></a>
+        </div>
+        <div class="card">
+            <h3>Este mes</h3>
+            <p>Servicios: <strong>3</strong></p>
+            <p>Horas: <strong>10h</strong></p>
+            <p>Ingresos: <strong>110€</strong></p>
+        </div>
+    </div>
+
+    <div class="card" style="margin-top: 16px;">
+        <h3>Mis badges verificados</h3>
+        <p>✓ Certificado de antecedentes penales</p>
+        <p>✓ Certificado de delitos de naturaleza sexual</p>
+        <p>✓ Certificado de aptitud</p>
+        <p>✓ Test psicotécnico CUIDAPP superado</p>
+    </div>
+
+    <div class="card" style="margin-top: 16px;">
+        <h3>Próximas reservas</h3>
+        <p>No tienes reservas pendientes.</p>
+    </div>
+
+</section>
+
+    <footer>
+        <p>CUIDAPP © 2026 — Barcelona</p>
+    </footer>
+<script src="script.js"></script> 
+</body>
+</html>

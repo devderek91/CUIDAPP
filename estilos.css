@@ -1,0 +1,576 @@
+/* ============================================
+   CUIDAPP — CSS Mobile First
+   Diseño base para móvil (390px)
+   Media queries para tablet y desktop
+   ============================================ */
+
+/* Variables */
+:root {
+    --color-principal: #2d8b6f;
+    --color-oscuro: #1f6b54;
+    --fondo-suave: #f5f9f7;
+    --borde-suave: #e8f5ef;
+    --texto-principal: #333333;
+    --texto-secundario: #555555;
+    --radio: 12px;
+    --sombra: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+/* Reset base */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo-suave);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 64px;
+    color: var(--texto-principal);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* ============================================
+   HEADER — fijo arriba
+   ============================================ */
+header {
+    background-color: #ffffff;
+    padding: 14px 16px;
+    color: var(--color-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--borde-suave);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--color-principal);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+header a {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header nav {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   SECCIÓN PRINCIPAL
+   ============================================ */
+section {
+    max-width: 760px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+h2 {
+    color: var(--color-oscuro);
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    color: var(--color-principal);
+    font-size: 16px;
+    margin-top: 0;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+    background-color: #1f9767;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+/* ============================================
+   BOTONES
+   ============================================ */
+button {
+    background-color: var(--color-oscuro);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #145c3d;
+}
+
+/* ============================================
+   FORMULARIOS
+   ============================================ */
+form {
+    background-color: white;
+    border: 1px solid var(--borde-suave);
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin-top: 20px;
+    box-shadow: var(--sombra);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 4px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--color-principal);
+    outline: none;
+}
+
+label {
+    font-weight: 600;
+    color: var(--texto-principal);
+    font-size: 14px;
+}
+
+/* ============================================
+   HERO — página de inicio
+   ============================================ */
+#hero {
+    background-color: #31af90;
+    color: white;
+    padding: 36px 20px;
+    text-align: center;
+    border-radius: 16px;
+    margin: 16px 0;
+}
+
+#hero h2 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#hero p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+#hero a {
+    background-color: white;
+    color: var(--color-principal);
+    padding: 10px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+}
+
+#hero a:hover {
+    background-color: #f0f0f0;
+}
+
+/* ============================================
+   CARDS
+   ============================================ */
+.card {
+    background-color: white;
+    border: 1px solid var(--borde-suave);
+    border-radius: var(--radio);
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    color: var(--color-principal);
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.card p {
+    color: var(--texto-secundario);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 4px 0;
+}
+
+/* ============================================
+   CARDS ROW — columnas
+   ============================================ */
+.cards-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ============================================
+   GRID 2 COLUMNAS
+   ============================================ */
+.grid-2x2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+/* ============================================
+   BOTONES GRANDES
+   ============================================ */
+.btn-grande {
+    display: block;
+    padding: 20px 16px;
+    border-radius: var(--radio);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: transform 0.2s;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-grande:hover {
+    transform: scale(1.02);
+}
+
+.btn-padre {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+.btn-cuidador {
+    background-color: white;
+    color: var(--color-principal);
+    border: 2px solid var(--color-principal);
+}
+
+.btn-rechazar {
+    background-color: #f5f5f5;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+
+/* ============================================
+   PERFIL
+   ============================================ */
+.perfil-header {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.perfil-foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.perfil-info h2 {
+    margin: 0 0 4px 0;
+    color: var(--color-principal);
+    font-size: 18px;
+}
+
+.perfil-info p {
+    margin: 2px 0;
+    color: var(--texto-secundario);
+    font-size: 13px;
+}
+
+.perfil-precio {
+    font-size: 18px !important;
+    font-weight: 700;
+    color: var(--color-principal) !important;
+}
+
+/* ============================================
+   ESTADO CUIDADORA
+   ============================================ */
+.estado-disponible {
+    color: var(--color-principal);
+    font-weight: 600;
+    font-size: 15px;
+    margin: 6px 0;
+}
+
+/* ============================================
+   ALERTA URGENTE
+   ============================================ */
+.alerta-urgente {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 24px 16px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.alerta-urgente h2 {
+    color: white;
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.alerta-urgente p {
+    color: rgba(255,255,255,0.85);
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.alerta-icon {
+    font-size: 40px;
+}
+
+/* ============================================
+   CHAT
+   ============================================ */
+.chat-mensaje {
+    padding: 10px 14px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    max-width: 85%;
+    font-size: 14px;
+}
+
+.chat-cuidador {
+    background-color: var(--fondo-suave);
+    border: 1px solid var(--borde-suave);
+    margin-right: auto;
+}
+
+.chat-padre {
+    background-color: var(--color-principal);
+    color: white;
+    margin-left: auto;
+}
+
+.chat-padre p {
+    color: white;
+    margin: 2px 0;
+}
+
+.chat-padre strong {
+    color: rgba(255,255,255,0.8);
+}
+
+/* ============================================
+   TABLA HISTORIAL
+   ============================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+th {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 10px 8px;
+    text-align: left;
+}
+
+td {
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--borde-suave);
+    color: var(--texto-secundario);
+}
+
+tr:hover {
+    background-color: var(--fondo-suave);
+}
+
+/* ============================================
+   VALORACIONES
+   ============================================ */
+.valoracion-estrella {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.valoracion-estrella label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border: 1px solid var(--borde-suave);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: normal;
+    transition: background-color 0.2s;
+}
+
+.valoracion-estrella label:hover {
+    background-color: var(--fondo-suave);
+}
+
+/* ============================================
+   RESEÑAS
+   ============================================ */
+.resena {
+    border-bottom: 1px solid var(--borde-suave);
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.resena:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* ============================================
+   LOGIN / REGISTRO — centrado en móvil
+   ============================================ */
+.ya-tengo-cuenta {
+    text-align: center;
+    font-size: 14px;
+    color: var(--texto-secundario);
+    margin-top: 16px;
+}
+
+.btn-login {
+    background-color: var(--color-principal);
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* ============================================
+   TABLET — 600px+
+   ============================================ */
+@media (min-width: 600px) {
+
+    body {
+        padding-top: 70px;
+    }
+
+    header {
+        padding: 16px 32px;
+    }
+
+    section {
+        padding: 0 24px;
+        margin: 32px auto;
+    }
+
+    .cards-row {
+        flex-direction: row;
+    }
+
+    .grid-2x2 {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    form {
+        padding: 28px 32px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .perfil-foto {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* ============================================
+   DESKTOP — 900px+
+   ============================================ */
+@media (min-width: 900px) {
+
+    header {
+        padding: 16px 40px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 0 20px;
+        margin: 40px auto;
+    }
+
+    .btn-grande {
+        padding: 24px;
+        font-size: 16px;
+    }
+
+    #hero {
+        padding: 48px 40px;
+    }
+
+    #hero h2 {
+        font-size: 26px;
+    }
+
+    form {
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .perfil-foto {
+        width: 100px;
+        height: 100px;
+    }
+}

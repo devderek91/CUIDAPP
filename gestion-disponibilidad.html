@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>CUIDAPP — Mi disponibilidad</title>
+</head>
+<body>
+
+    <header>
+        <h1>CUIDAPP</h1>
+        <a href="dashboard-cuidador.html">← Volver</a>
+    </header>
+
+    <section>
+        <h2>Mi disponibilidad</h2>
+        <p>Indica cuándo puedes trabajar. Solo recibirás reservas en los horarios que marques.</p>
+
+        <form>
+
+            <h3>Estado general</h3>
+            <p>
+                <label>
+                    <input type="radio" name="estado" value="disponible"> 
+                    🟢 Disponible ahora
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="estado" value="no-disponible"> 
+                    🔴 No disponible ahora
+                </label>
+            </p>
+
+            <h3>Días disponibles</h3>
+            <p><label><input type="checkbox" name="dia"> Lunes</label></p>
+            <p><label><input type="checkbox" name="dia"> Martes</label></p>
+            <p><label><input type="checkbox" name="dia"> Miércoles</label></p>
+            <p><label><input type="checkbox" name="dia"> Jueves</label></p>
+            <p><label><input type="checkbox" name="dia"> Viernes</label></p>
+            <p><label><input type="checkbox" name="dia"> Sábado</label></p>
+            <p><label><input type="checkbox" name="dia"> Domingo</label></p>
+
+            <h3>Franja horaria</h3>
+            <p>
+                <label>Desde</label><br>
+                <input type="time">
+            </p>
+            <p>
+                <label>Hasta</label><br>
+                <input type="time">
+            </p>
+
+            <h3>Zona de trabajo</h3>
+            <p>
+                <label>Radio máximo de desplazamiento</label><br>
+                <select>
+                    <option>Hasta 10km — sin suplemento</option>
+                    <option>Hasta 30km — suplemento 5€</option>
+                    <option>Hasta 50km — suplemento 10€</option>
+                </select>
+            </p>
+
+            <p>
+                <button type="submit">Guardar disponibilidad</button>
+            </p>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>CUIDAPP © 2026 — Barcelona</p>
+    </footer>
+
+</body>
+</html>

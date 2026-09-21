@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>CUIDAPP — Reserva y pago</title>
+</head>
+<script src="script.js"></script>
+<body>
+
+    <header>
+        <h1>CUIDAPP</h1>
+        <a href="perfil-cuidador.html">← Volver</a>
+    </header>
+
+    <section>
+        <h2>Reservar con María García</h2>
+        <p>Confirma los detalles antes de pagar.</p>
+
+        <form>
+
+            <h3>Detalles del servicio</h3>
+            <p>
+                <label>Fecha</label><br>
+                <input type="date">
+            </p>
+            <p>
+                <label>Hora de inicio</label><br>
+                <input type="time">
+            </p>
+            <p>
+                <label>Número de horas</label><br>
+<select id="horas" onchange="actualizarTotal()">
+    <option value="2">2 horas</option>
+    <option value="3">3 horas</option>
+    <option value="4">4 horas</option>
+    <option value="5">5 horas</option>
+    <option value="6">6 horas</option>
+    <option value="7">7 horas</option>
+    <option value="8">8 horas</option>
+</select>
+<h3>¿Dónde estás?</h3>
+<p>
+    <label>Radio de búsqueda</label><br>
+    <select id="radioReserva" onchange="actualizarTotal()">
+        <option value="0">Hasta 10km — sin suplemento</option>
+        <option value="5">Hasta 30km — suplemento 5€</option>
+        <option value="10">Hasta 50km — suplemento 10€</option>
+    </select>
+</p>
+
+            </p>
+
+            <h3>Resumen del precio</h3>
+            <p>Precio por hora: 10€</p>
+            <p>Horas seleccionadas: 2</p>
+            <p>Suplemento desplazamiento: 0€</p>
+            <p><strong>Total: <span id="precioTotal">20€</span></strong></p>
+
+            <h3>Método de pago</h3>
+            <p>
+                <label>Número de tarjeta</label><br>
+                <input type="text" placeholder="1234 5678 9012 3456" maxlength="19">
+            </p>
+            <p>
+                <label>Fecha de caducidad</label><br>
+                <input type="text" placeholder="MM/AA" maxlength="5">
+            </p>
+            <p>
+                <label>CVV</label><br>
+                <input type="text" placeholder="123" maxlength="3">
+            </p>
+            <div>
+            <h3>Política de cancelación</h3>
+            <p>Cancelación gratuita hasta 24h antes del servicio.</p>
+            <p>Entre 24h y 2h antes: se cobra el 50% del servicio.</p>
+            <p>Menos de 2h antes o modo urgencia: se cobra el 100%.</p>
+            <p>El cuidador siempre recibe su pago garantizado.</p>
+            </div>
+            <p>
+                <button type="submit">Confirmar reserva — 20€</button>
+            </p>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>CUIDAPP © 2026 — Barcelona</p>
+    </footer>
+
+</body>
+</html>

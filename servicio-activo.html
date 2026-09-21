@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>CUIDAPP — Servicio en curso</title>
+</head>
+<body>
+
+    <header>
+        <h1>CUIDAPP</h1>
+        <p>🟢 Servicio en curso</p>
+    </header>
+
+    <section>
+    <div class="alerta-urgente">
+        <div class="alerta-icon">🟢</div>
+        <h2>Todo bajo control</h2>
+        <p>María García está con Lucas desde las 17:00</p>
+        <p>⏱ Tiempo restante: 2h 30min</p>
+        <p>Finaliza a las 21:00</p>
+    </div>
+
+    <div class="card">
+        <h3>📍 Ubicación</h3>
+        <p>Gracia, Barcelona</p>
+        <p style="font-size: 13px; color: #999;">
+            El mapa en tiempo real estará disponible en la versión app.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>💬 Chat con María</h3>
+
+        <div id="mensajes">
+    <div class="chat-mensaje chat-cuidador">
+        <p><strong>María</strong> — 17:05</p>
+        <p>Hola Ana, ya estoy con Lucas. Está muy bien. 😊</p>
+    </div>
+    <div class="chat-mensaje chat-padre">
+        <p><strong>Tú</strong> — 17:08</p>
+        <p>Perfecto, muchas gracias María.</p>
+    </div>
+</div>
+
+<div style="margin-top: 16px; display: flex; gap: 8px;">
+    <input type="text" id="inputMensaje" placeholder="Escribe un mensaje...">
+    <button type="button" onclick="enviarMensaje()">Enviar</button>
+</div>
+    </div>
+
+    <div class="card">
+        <h3>📞 Contacto de emergencia</h3>
+        <a href="tel:+34600000000" class="btn-grande btn-padre">
+            Llamar a María
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>¿Necesitas finalizar antes?</h3>
+        <p style="font-size: 13px; color: #999;">
+            Se cobran las horas utilizadas redondeadas al alza. Mínimo 2 horas.
+        </p>
+        <a href="valorar-servicio.html" class="btn-grande btn-rechazar" 
+           style="margin-top: 12px;">
+            Finalizar servicio ahora
+        </a>
+    </div>
+
+</section>
+
+    <footer>
+        <p>CUIDAPP © 2026 — Barcelona</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

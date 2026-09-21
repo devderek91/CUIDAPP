@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>CUIDAPP — Perfil del niño/a</title>
+</head>
+<body>
+
+    <header>
+        <h1>CUIDAPP</h1>
+        <a href="registro-padre.html">← Volver</a>
+    </header>
+
+    <section>
+        <h2>Cuéntanos sobre tu hijo/a</h2>
+        <p>Esta información solo la verá el cuidador cuando confirme la reserva.</p>
+
+        <form>
+
+            <h3>Información básica</h3>
+            <p>
+                <label>Nombre del niño/a</label><br>
+                <input type="text" placeholder="Nombre">
+            </p>
+            <p>
+                <label>Edad</label><br>
+                <input type="number" placeholder="Años" min="1" max="10">
+            </p>
+            <p>
+                <label>Foto del niño/a (opcional)</label><br>
+                <input type="file">
+            </p>
+
+            <h3>Información de seguridad</h3>
+            <p>
+                <label>Alergias</label><br>
+                <input type="text" placeholder="Frutos secos, lactosa... o ninguna">
+            </p>
+            <p>
+                <label>Medicamentos</label><br>
+                <input type="text" placeholder="Nombre, dosis y horario... o ninguno">
+            </p>
+            <p>
+                <label>Teléfono de emergencia alternativo</label><br>
+                <input type="tel" placeholder="+34 600 000 000">
+            </p>
+
+            <h3>Información opcional</h3>
+            <p>
+                <label>Gustos y aficiones</label><br>
+                <input type="text" placeholder="Le encanta el fútbol, los dinosaurios...">
+            </p>
+            <p>
+                <label>Miedos o fobias</label><br>
+                <input type="text" placeholder="Oscuridad, perros...">
+            </p>
+            <p>
+                <label>Rutina habitual</label><br>
+                <input type="text" placeholder="Cena a las 20h, duerme a las 21h...">
+            </p>
+            <p>
+                <label>Observaciones adicionales</label><br>
+                <textarea placeholder="Cualquier cosa importante que el cuidador deba saber..."></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Guardar perfil</button>
+            </p>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>CUIDAPP © 2026 — Barcelona</p>
+    </footer>
+
+</body>
+</html>

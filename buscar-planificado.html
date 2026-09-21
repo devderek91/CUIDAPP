@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>CUIDAPP — Planificar servicio</title>
+</head>
+<body>
+
+    <header>
+        <h1>CUIDAPP</h1>
+        <a href="dashboard-padre.html">← Volver</a>
+    </header>
+
+    <section>
+        <h2>📅 Lo necesito para otro día</h2>
+        <p>Elige con tiempo tu canguro ideal. Hasta 50km de radio.</p>
+
+        <form>
+
+            <h3>¿Cuándo lo necesitas?</h3>
+            <p>
+                <label>Fecha</label><br>
+                <input type="date">
+            </p>
+            <p>
+                <label>Hora de inicio</label><br>
+                <input type="time">
+            </p>
+            <p>
+                <label>Número de horas</label><br>
+                <select>
+                    <option>2 horas — 20€</option>
+                    <option>3 horas — 30€</option>
+                    <option>4 horas — 40€</option>
+                    <option>5 horas — 50€</option>
+                    <option>6 horas — 60€</option>
+                    <option>7 horas — 70€</option>
+                    <option>8 horas — 80€</option>
+                </select>
+            </p>
+
+            <h3>¿Dónde?</h3>
+            <p>
+                <label>Radio de búsqueda</label><br>
+                <select id="radio" onchange="actualizarSuplemento()">
+    <option value="0">Hasta 10km — sin suplemento</option>
+    <option value="5">Hasta 30km — suplemento 5€</option>
+    <option value="10">Hasta 50km — suplemento 10€</option>
+                </select>
+                <p>Suplemento de desplazamiento: <span id="suplemento">0€</span></p>
+            </p>
+
+            <h3>¿Tienes alguna preferencia?</h3>
+<p>
+    <label>
+        <input type="checkbox">
+        Experiencia con bebés menores de 2 años
+    </label>
+</p>
+<p>
+    <label>
+        <input type="checkbox">
+        Experiencia con niños con necesidades especiales
+    </label>
+</p>
+<p>
+    <label>
+        <input type="checkbox">
+        Más de 10 servicios realizados
+    </label>
+</p>
+<p>
+    <label>
+        <input type="checkbox">
+        Valoración mínima de 4 estrellas
+    </label>
+</p>
+<p>
+    <label>
+        <input type="checkbox">
+        Habla catalán
+    </label>
+</p>
+<p>
+    <label>
+        <input type="checkbox">
+        Habla castellano
+    </label>
+</p>
+<p>
+    <label>
+        <input type="checkbox">
+        Habla inglés
+    </label>
+</p>
+            
+            <h3>Política de cancelación</h3>
+            <p>Cancelación gratuita hasta 24h antes.</p>
+            <p>Entre 24h y 2h antes: 50% del servicio.</p>
+            <p>Menos de 2h antes: 100% del servicio.</p>
+
+            <p>
+                <button type="submit">Buscar canguro disponible</button>
+            </p>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>CUIDAPP © 2026 — Barcelona</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
