@@ -3,10 +3,6 @@ db.php
 config/db.php
 config/config.php
 
-# Base de datos (estructura SÍ, datos NO)
-*.sql
-database/*.sql
-
 # Archivos del sistema
 .DS_Store
 Thumbs.db
